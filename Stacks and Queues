@@ -1,0 +1,19 @@
+//Day 18:Stacks and Queue
+
+public class Solution {
+    // Write your code here.
+    LinkedList<Character> q = new LinkedList<>();
+    Stack<Character> st = new Stack<>();
+    void pushCharacter(char ch){
+        st.push(ch);
+    }
+    void enqueueCharacter(char ch){
+        q.add(ch);
+    }
+    char popCharacter() {
+       return st.pop();
+       
+    }
+    char dequeueCharacter() {
+        return q.remove();
+    }
