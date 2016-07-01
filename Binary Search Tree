@@ -1,0 +1,15 @@
+//BST
+	public static int getHeight(Node root){
+      //Write your code here
+        int height;
+        if (root==null){
+            return -1;
+        }
+        else {
+            int lh= 1 + getHeight(root.left);
+            int rh= 1+ getHeight(root.right);
+              return (lh>rh ? lh:rh) ;
+        }
+        
+      
+    }
